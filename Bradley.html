@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/utilities.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Players</title>
+</head>
+
+<body id="home">
+  <!-- HEAD -->
+  <header class="hero blog">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary"></span>LFC
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html #home">HOME</a></li>
+          <li><a href="index.html #matchs">MATCHES</a></li>
+          <li><a href="index.html #player">PLAYER</a></li>
+          <li><a href="index.html #statistic">STATISTIC</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>LIVERPOOL PLAYER SEASON 2021 - 2022</h1>
+    </div>
+  </header>
+  <!-- PLAYER -->
+  <main>
+    <article class="flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/Playerlfc/Bradley.png" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-light">
+            <h2>NO.84</h2>
+            <h2>Conor Bradley</h2>
+            <h3>Position : Midfielder</h3>
+            <h3>National : Northern Ireland</h3>
+            <p>Date of Birth : 09/07/2003 | 18 Years | Height 170 CM</p>
+            <p>Bradley began his youth career with hometown club St. Patrick's F.C. at age nine. He went on to play
+              for Dungannon United Youth and Dungannon Swifts, before joining the youth academy of English club
+              Liverpool in 2019 on a two-year scholarship program. However, after a year at the club, he signed his
+              first professional contract with Liverpool, lasting three years until 2023.
+              He made his debut appearance for the Liverpool first team in a preseason friendly with VfB Stuttgart in
+              July 2021, playing the whole of a 30-minute mini-game. He also appeared as an 80th-minute substitute in
+              the team's final preseason friendly against CA Osasuna on the 9th of August. He made his first
+              professional appearance for Liverpool in a Carabao Cup tie against Norwich City in September 2021,
+              becoming the first Northern Irish player to feature for a competitive game for Liverpool since Sammy Smyth
+              in 1954. He came on as a sub to make his debut UEFA Champions League appearance for Liverpool away to
+              AC Milan in the San Siro stadium on 8th December 2021.
+            </p>
+            <a href="Bradley.html" class="btn btn-dark">
+              <i class="fas fa-chevron"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- PHOTO -->
+    <article class="flex-columns flex-reverse">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/Playerlfc/Bl1.jpg" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-1">
+            <img src="images/Playerlfc/Bl2.jpg" />
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- SOCIAL -->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="https://www.facebook.com/ThailandLiverpoolFC/"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/LiverpoolFC?s=20"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.youtube.com/channel/UC9LQwHZoucFT94I2h6JOcjw"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="https://www.instagram.com/liverpoolfc/?hl=th"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    <p>LiverpoolFC &copy; Arthit Thaweebot</p>
+  </footer>
+  <!-- UNDER NAVBAR-->
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+  </script>
+</body>
+
+</html>

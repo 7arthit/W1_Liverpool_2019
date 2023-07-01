@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/utilities.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Players</title>
+</head>
+
+<body id="home">
+  <!-- HEAD -->
+  <header class="hero blog">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary"></span>LFC
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html #home">HOME</a></li>
+          <li><a href="index.html #matchs">MATCHES</a></li>
+          <li><a href="index.html #player">PLAYER</a></li>
+          <li><a href="index.html #statistic">STATISTIC</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>LIVERPOOL PLAYER SEASON 2021 - 2022</h1>
+    </div>
+  </header>
+  <!-- PLAYER -->
+  <main>
+    <article class="flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/Playerlfc/Jota.png" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-light">
+            <h2>NO.20</h2>
+            <h2>Diogo Jota</h2>
+            <h3>Position : Forward</h3>
+            <h3>National : Portugal</h3>
+            <p>Date of Birth : 04/12/1996 | 25 Years | Height 178 CM</p>
+            <p>On 19 September 2020, Jota joined Liverpool on a long-term deal, reportedly for a £41 million transfer
+              fee, rising to £45 million with potential add ons. He made his debut in the EFL Cup five days
+              later, coming on as a second-half substitute against Lincoln City in a 7-2 win. On 28 September, he
+              scored on his Premier League debut for the club, with the third in a 3-1 win against Arsenal at
+              Anfield. On 25 October, Jota scored the winning goal in a 2-1 win against Sheffield United at
+              Anfield.Three days later, Jota scored the club's 10,000th goal in their history when he netted the
+              opener against Midtjylland in the UEFA Champions League. On 3 November, he scored a hat-trick in a 5-0
+              win at Atalanta in the Champions League. In doing so, Jota became the first player since Robbie Fowler
+              in 1993 to score 7 goals in his first 10 Liverpool appearances. On 22 November, Jota scored the second
+              goal in a 3-0 victory against Leicester City, becoming the first Liverpool player to score in each of his
+              first four home matches in the Premier League. For his performances in October, Jota was awarded
+              Liverpool Player of the Month by the club's supporters. On 9 December, Jota suffered a leg injury
+              during a UEFA Champions League match against Midtjylland, sidelining him for three months. Jota ended
+              his debut season at the club with nine league goals, including a memorable back heel in a 4-2 away win
+              against Manchester United, which helped Liverpool finish third in the Premier League and qualify for
+              the Champions League.
+            </p>
+            <a href="Jota.html" class="btn btn-dark">
+              <i class="fas fa-chevron"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- PHOTO -->
+    <article class="flex-columns flex-reverse">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/Playerlfc/Jt1.jpg" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-1">
+            <img src="images/Playerlfc/Jt2.jpg" />
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- SOCIAL -->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="https://www.facebook.com/ThailandLiverpoolFC/"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/LiverpoolFC?s=20"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.youtube.com/channel/UC9LQwHZoucFT94I2h6JOcjw"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="https://www.instagram.com/liverpoolfc/?hl=th"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    <p>LiverpoolFC &copy; Arthit Thaweebot</p>
+  </footer>
+  <!-- UNDER NAVBAR-->
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+  </script>
+</body>
+
+</html>

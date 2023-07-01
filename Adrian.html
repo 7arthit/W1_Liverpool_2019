@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/utilities.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Players</title>
+</head>
+
+<body id="home">
+  <!-- HEAD -->
+  <header class="hero blog">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary"></span>LFC
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html #home">HOME</a></li>
+          <li><a href="index.html #matchs">MATCHES</a></li>
+          <li><a href="index.html #player">PLAYER</a></li>
+          <li><a href="index.html #statistic">STATISTIC</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>LIVERPOOL PLAYER SEASON 2021 - 2022</h1>
+    </div>
+  </header>
+  <!-- PLAYER -->
+  <main>
+    <article class="flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/Playerlfc/Adrian.png"/>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-light">
+            <h2>NO.13</h2>
+            <h2>Adrián San Miguel </h2>
+            <h3>Position : Goalkeeper</h3>
+            <h3>National : Spain</h3>
+            <p>Date of Birth : 03/01/1987 | 34 Years | Height 190 CM</p>
+            <p>On 5 August 2019, it was announced that Adrián had signed for Liverpool on a free transfer. He made
+              his debut for the club on 9 August in a 4 - 1 win against Norwich City, coming on in the 39th minute,
+              replacing the injured Alisson.[35] On 14 August, Adrián started in the 2019 UEFA Super Cup; in extra-time,
+              he conceded a penalty for a foul on Tammy Abraham, from which Jorginho was able to tie the match for
+              Chelsea. Following a 2 - 2 draw, the match went to a penalty shoot-out, in which Adrián saved Abraham's
+              final penalty, winning Liverpool their first trophy of the 2019 - 20 season with a 5- 4 victory on
+              penalties.[36][37] It was also Adrián's first trophy of his career. Liverpool manager, Jürgen Klopp
+              described his performance in the game as "incredible".
+            </p>
+            <a href="Adrian.html" class="btn btn-dark">
+              <i class="fas fa-chevron"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- PHOTO -->
+    <article class="flex-columns flex-reverse">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/Playerlfc/Ad1.jpg" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-1">
+            <img src="images/Playerlfc/Ad2.jpg" />
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- SOCIAL -->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="https://www.facebook.com/ThailandLiverpoolFC/"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/LiverpoolFC?s=20"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.youtube.com/channel/UC9LQwHZoucFT94I2h6JOcjw"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="https://www.instagram.com/liverpoolfc/?hl=th"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    <p>LiverpoolFC &copy; Arthit Thaweebot</p>
+  </footer>
+  <!-- UNDER NAVBAR-->
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+  </script>
+</body>
+
+</html>
